@@ -8,6 +8,9 @@
     <meta name="keywords" content="Takoyaki Semarang, Kuliner Banyumanik, Jajanan Pudakpayung, Takoyaki Enak Terdekat, Makanan Hits Semarang, Jajanan Malam Banyumanik, Takoyaki Dari Tuhan">
     <meta name="google-site-verification" content="4phdc361kqEOCk9aDCPlG8iiHH_Cy1TMQRuYVRDOuHQ" />
 	
+    <!-- PRELOAD HERO IMAGE (WAJIB UNTUK MENDONGKRAK SKOR LCP MOBILE KE HIJAU) -->
+    <link rel="preload" as="image" href="./comfy-snack-jepang-takoyaki.webp" type="image/webp" fetchpriority="high">
+
     <!-- GOD-TIER JSON-LD (3-NODE SILO TO DONGKRAKUSAHA.COM + SAMEAS ENTITY) -->
     <script type="application/ld+json">
     {
@@ -85,26 +88,12 @@
     }
     </script>
 
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            orange: '#FF5500',
-                            gold: '#FFD700',
-                            dark: '#050505'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- PEMANGGILAN CSS STATIS HASIL KOMPILASI TAILWIND (ZERO-BLOAT) -->
+    <link rel="stylesheet" href="./style.css">
 
     <style>
         body { font-family: 'DM Sans', sans-serif; background: #050505; color: #f4ede4; }
@@ -158,7 +147,7 @@
     <!-- HERO SECTION -->
     <section class="relative min-h-screen pt-32 pb-16 overflow-hidden flex items-center">
         <div class="absolute inset-0 z-0">
-            <img src="https://raw.githubusercontent.com/sutato-1272/takoyaki-banyumanik/main/comfy-snack-jepang-takoyaki.webp" class="w-full h-full object-cover opacity-40 scale-105" alt="Takoyaki Enak Terdekat Banyumanik" fetchpriority="high" loading="eager" decoding="sync">
+            <img src="./comfy-snack-jepang-takoyaki.webp" class="w-full h-full object-cover opacity-40 scale-105" alt="Takoyaki Enak Terdekat Banyumanik" fetchpriority="high" loading="eager" decoding="sync">
             <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/80 to-transparent"></div>
         </div>
         <div class="absolute inset-0 grain opacity-60 z-0"></div>
@@ -198,7 +187,6 @@
                     </a>
                 </div>
 
-                <!-- Ribbon Facts -->
                 <div class="mt-16 grid grid-cols-3 gap-4 max-w-lg mx-auto text-center border-t border-white/10 pt-8">
                     <div>
                         <p class="font-display text-3xl sm:text-4xl text-white">
@@ -272,7 +260,6 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-6">
-                <!-- Menu 1 -->
                 <div class="group relative bg-[#0a0a0a] border border-white/10 rounded-2xl overflow-hidden hover:border-brand-orange/60 transition duration-500 shadow-2xl">
                     <div class="relative h-56 sm:h-64 overflow-hidden">
                         <img src="./menu-takoyaki.webp" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Menu Takoyaki Terdekat" loading="lazy">
@@ -289,7 +276,6 @@
                     </div>
                 </div>
 
-                <!-- Menu 2 -->
                 <div class="group relative bg-gradient-to-b from-brand-orange/20 to-[#0a0a0a] border border-brand-orange/30 rounded-2xl overflow-hidden transition duration-500 shadow-[0_0_30px_rgba(255,85,0,0.1)]">
                     <div class="absolute -right-8 -top-6 text-[10px] uppercase tracking-[0.3em] bg-brand-gold text-black px-8 py-2 rotate-12 font-bold z-10 shadow-lg">Lumer Maksimal</div>
                     <div class="relative h-56 sm:h-64 overflow-hidden">
@@ -306,7 +292,6 @@
                     </div>
                 </div>
 
-                <!-- Menu 3 -->
                 <div class="group relative bg-[#0a0a0a] border border-white/10 rounded-2xl overflow-hidden hover:border-brand-orange/60 transition duration-500 shadow-2xl">
                     <div class="relative h-56 sm:h-64 overflow-hidden">
                         <img src="./okonomiyaki-spesial-takoyaki.webp" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Okonomiyaki Jumbo Semarang" loading="lazy">
